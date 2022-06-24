@@ -12,7 +12,7 @@ function App() {
 
   useEffect( () => {
     
-    if (liquorChoice && liquorChoice != "placeholder") {
+    if (liquorChoice && liquorChoice !== "placeholder") {
       axios({ 
         baseURL: 'https://www.thecocktaildb.com/api/json/v1/1/filter.php',
         params: {
